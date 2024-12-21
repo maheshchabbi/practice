@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mahesh-dep
-          image: maheshchabbi/demoprt
+          image: maheshchabbi/demoprt1
           ports:
             - containerPort: 80
