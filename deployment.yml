@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mahesh
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mahesh
+  template:
+    metadata:
+      labels:
+        app: mahesh
+    spec:
+      containers:
+        - name: mahesh-dep
+          image: maheshchabbi/demoprt
+          ports:
+            - containerPort: 80
